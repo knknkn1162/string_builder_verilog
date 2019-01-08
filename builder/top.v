@@ -30,7 +30,7 @@ module top (
   // for debug
   genvar i;
   generate
-    for(i = 0; i < 3; i=i+1) begin: gen_ledr
+    for(i = 0; i < 4; i=i+1) begin: gen_ledr
       toggle #(1'b0) toggle0 (
         .clk(clk), .i_sclr(i_sclr), .i_en(s_ledr_en[i]),
         .o_sw(o_ledr[i])

@@ -19,27 +19,27 @@ module key_in (
 
   // arrow key
   posedge_detector #(BITS, TRIGGER) posedge_right(
-    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~s_key_right),
+    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~i_key_right_n),
     .o_posedge(o_right_en)
   );
 
   posedge_detector #(BITS, TRIGGER) posedge_down(
-    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~s_key_down),
+    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~i_key_down_n),
     .o_posedge(o_down_en)
   );
 
   posedge_detector #(BITS, TRIGGER) posedge_left(
-    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~s_key_left),
+    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~i_key_left_n),
     .o_posedge(o_left_en)
   );
 
   posedge_detector #(BITS, TRIGGER) posedge_char(
-    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~s_key_char_n),
+    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~i_key_char_n),
     .o_posedge(s_key_char_en)
   );
 
   posedge_detector #(BITS, TRIGGER) posedge_backspace(
-    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~s_key_backspace_n),
+    .clk(clk), .i_sclr(i_sclr), .i_en(i_en), .i_dat(~i_key_backspace_n),
     .o_posedge(s_key_backspace_en)
   );
 
