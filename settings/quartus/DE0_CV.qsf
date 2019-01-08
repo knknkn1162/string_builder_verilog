@@ -256,38 +256,38 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[9]
 #============================================================
 # HEX0
 #============================================================
-set_location_assignment PIN_U21 -to HEX0[0]
-set_location_assignment PIN_V21 -to HEX0[1]
-set_location_assignment PIN_W22 -to HEX0[2]
-set_location_assignment PIN_W21 -to HEX0[3]
-set_location_assignment PIN_Y22 -to HEX0[4]
-set_location_assignment PIN_Y21 -to HEX0[5]
-set_location_assignment PIN_AA22 -to HEX0[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[6]
+set_location_assignment PIN_U21 -to o_hex0[0]
+set_location_assignment PIN_V21 -to o_hex0[1]
+set_location_assignment PIN_W22 -to o_hex0[2]
+set_location_assignment PIN_W21 -to o_hex0[3]
+set_location_assignment PIN_Y22 -to o_hex0[4]
+set_location_assignment PIN_Y21 -to o_hex0[5]
+set_location_assignment PIN_AA22 -to o_hex0[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex0[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex0[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex0[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex0[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex0[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex0[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex0[6]
 
 #============================================================
 # HEX1
 #============================================================
-set_location_assignment PIN_AA20 -to HEX1[0]
-set_location_assignment PIN_AB20 -to HEX1[1]
-set_location_assignment PIN_AA19 -to HEX1[2]
-set_location_assignment PIN_AA18 -to HEX1[3]
-set_location_assignment PIN_AB18 -to HEX1[4]
-set_location_assignment PIN_AA17 -to HEX1[5]
-set_location_assignment PIN_U22 -to HEX1[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[6]
+set_location_assignment PIN_AA20 -to o_hex1[0]
+set_location_assignment PIN_AB20 -to o_hex1[1]
+set_location_assignment PIN_AA19 -to o_hex1[2]
+set_location_assignment PIN_AA18 -to o_hex1[3]
+set_location_assignment PIN_AB18 -to o_hex1[4]
+set_location_assignment PIN_AA17 -to o_hex1[5]
+set_location_assignment PIN_U22 -to o_hex1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_hex1[6]
 
 #============================================================
 # HEX2
@@ -364,20 +364,20 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[6]
 #============================================================
 # KEY
 #============================================================
-set_location_assignment PIN_U7 -to KEY[0]
-set_location_assignment PIN_W9 -to KEY[1]
-set_location_assignment PIN_M7 -to KEY[2]
-set_location_assignment PIN_M6 -to KEY[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[3]
+set_location_assignment PIN_U7 -to i_key_right_n
+set_location_assignment PIN_W9 -to i_key_down_n
+set_location_assignment PIN_M7 -to i_key_left_n
+set_location_assignment PIN_M6 -to i_key_char_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_key_right_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_key_down_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_key_left_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_key_char_n
 
 #============================================================
 # KEY (Reset)
 #============================================================
-set_location_assignment PIN_P22 -to FPGA_RESET_N
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_RESET_N
+set_location_assignment PIN_P22 -to i_key_backspace_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_key_backspace_n
 
 #============================================================
 # LEDR
@@ -444,7 +444,7 @@ set_location_assignment PIN_AB15 -to SW[5]
 set_location_assignment PIN_AA14 -to SW[6]
 set_location_assignment PIN_AA13 -to SW[7]
 set_location_assignment PIN_AB13 -to SW[8]
-set_location_assignment PIN_AB12 -to SW[9]
+set_location_assignment PIN_AB12 -to i_sclr
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[2]
@@ -454,7 +454,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[8]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_sclr
 
 #============================================================
 # VGA
